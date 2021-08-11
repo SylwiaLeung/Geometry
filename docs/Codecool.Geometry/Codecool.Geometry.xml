@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Codecool.Geometry</name>
+    </assembly>
+    <members>
+        <member name="T:Codecool.Geometry.Containers.ShapeCollection">
+            <summary>
+                Shape Collection class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Containers.ShapeCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Containers.ShapeCollection"/> class.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Containers.ShapeCollection.Shapes">
+            <summary>
+                Gets elements of the Shape list.
+            </summary>
+            <returns>Shape list</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Containers.ShapeCollection.GetShapesTable(System.Collections.Generic.List{Codecool.Geometry.Shapes.Shape})">
+            <summary>
+                Gets elements of the Shape list along with the Perimeter value.
+            </summary>
+            <returns>Shape list in a string format</returns>
+            <param name="shapes">List of shapes added by the user</param>
+        </member>
+        <member name="M:Codecool.Geometry.Containers.ShapeCollection.AddShape(Codecool.Geometry.Shapes.Shape)">
+            <summary>
+                Adds element to the Shape list.
+            </summary>
+            <param name="shape">Shape class object</param>
+        </member>
+        <member name="M:Codecool.Geometry.Containers.ShapeCollection.GetLargestShapeByPerimeter">
+            <summary>
+                Gets the biggest element by its Perimeter.
+            </summary>
+            <returns>Shape instance with the largest Perimeter</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Containers.ShapeCollection.GetLargestShapeByArea">
+            <summary>
+                Gets the biggest element by its Area.
+            </summary>
+            <returns>Shape instance with the largest Area</returns>
+        </member>
+        <member name="T:Codecool.Geometry.Program">
+            <summary>
+                This is the main class of your program which contains Main method
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Program.Main(System.String[])">
+            <summary>
+                This is the entry point of your program.
+            </summary>
+            <param name="args">Command line arguments.</param>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.Circle">
+            <summary>
+                Circle implementation class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Circle.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Shapes.Circle"/> class.
+            </summary>
+            <param name="radius">Value for shape's radius.</param>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Circle.AreaFormula">
+            <summary>
+                Gets formula for the area of the circle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Circle.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the circle as a string.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Circle.CountPerimeter">
+            <summary>
+                Counts the Perimeter value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Circle.CountArea">
+            <summary>
+                Counts the Area value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Circle.Area">
+            <inheritdoc />
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Circle.Perimeter">
+            <inheritdoc />
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Circle.Radius">
+            <summary>
+                Gets private field _Radius.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Circle.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.EquilateralTriangle">
+            <summary>
+                Equilateral Triangle implementation class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.EquilateralTriangle.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Shapes.EquilateralTriangle"/> class.
+            </summary>
+            <param name="side">Value for shape's side</param>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the equilateral triangle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.AreaFormula">
+            <summary>
+                Gets formula for the area of the equilateral triangle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.Side">
+            <summary>
+                Gets private field _Side.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.SideA">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.SideB">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.BaseC">
+            <inheritdoc/>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.EquilateralTriangle.CountPerimeter">
+            <inheritdoc/>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.EquilateralTriangle.CountArea">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.Perimeter">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.EquilateralTriangle.Area">
+            <inheritdoc/>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.EquilateralTriangle.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.Rectangle">
+            <summary>
+                Rectangle implementation class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Rectangle.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Shapes.Rectangle"/> class.
+            </summary>
+            <param name="length">Provides value for private readonly field _Length.</param>
+            <param name="width">Provides value for private readonly field _Width.</param>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Rectangle.AreaFormula">
+            <summary>
+                Gets formula for the area of the rectangle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Rectangle.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the rectangle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Rectangle.Length">
+            <summary>
+                Gets private field _Length.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Rectangle.Width">
+            <summary>
+                Gets private field _Width.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Rectangle.CountPerimeter">
+            <summary>
+                Counts the Perimeter value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Rectangle.CountArea">
+            <summary>
+                Counts the Area value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Rectangle.Area">
+            <inheritdoc />
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Rectangle.Perimeter">
+            <inheritdoc />
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Rectangle.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.RegularPentagon">
+            <summary>
+                Regular Pentagon implementation class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.RegularPentagon.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Shapes.RegularPentagon"/> class.
+            </summary>
+            <param name="side">Value for shape's side</param>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.RegularPentagon.AreaFormula">
+            <summary>
+                Gets formula for the area of the pentagon as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.RegularPentagon.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the pentagon as a string.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.RegularPentagon.CountPerimeter">
+            <summary>
+                Counts the Perimeter value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.RegularPentagon.CountArea">
+            <summary>
+                Counts the Area value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.RegularPentagon.Area">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.RegularPentagon.Perimeter">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.RegularPentagon.Side">
+            <summary>
+                Gets private field _Side.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.RegularPentagon.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.Shape">
+            <summary>
+                This is an abstract class representing geometrical shapes.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Shape.AreaFormula">
+            <summary>
+                Gets formula for the area of the shape as a string.
+                It is a static property so it cannot be abstract
+                This property should be hidden by subclasses
+            </summary>
+            <returns>Definition of return value</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Shape.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the shape as a string.
+                It is a static property so it cannot be abstract
+                This property should be hidden by subclasses
+            </summary>
+            <returns>Definition of return value</returns>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Shape.Area">
+            <summary>
+               Gets calculated shape's area
+            </summary>
+            <returns>Area of the shape</returns>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Shape.Perimeter">
+            <summary>
+                Gets calculated shape's perimeter.
+            </summary>
+            <returns>Perimeter of the shape</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Shape.CheckIfArgsAreGreaterThanZero(System.Double[])">
+            <summary>
+                Check if all args are greater than 0
+            </summary>
+            <param name="args">Arguments to check</param>
+            <returns>True if all of args are greater than 0</returns>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.Square">
+            <summary>
+                Square implementation class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Square.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Shapes.Square"/> class.
+            </summary>
+            <param name="side">Value for shape's side</param>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Square.AreaFormula">
+            <summary>
+                Gets formula for the area of the square as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Square.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the square as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Square.Side">
+            <summary>
+                Gets private field _Side
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Square.Length">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Square.Width">
+            <inheritdoc/>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Square.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Codecool.Geometry.Shapes.Triangle">
+            <summary>
+                Triangle implementation class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Triangle.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.Geometry.Shapes.Triangle"/> class.
+            </summary>
+            <param name="sideA">Value for shape's side A</param>
+            <param name="sideB">Value for shape's side B</param>
+            <param name="baseC">Value for shape's base</param>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.AreaFormula">
+            <summary>
+                Gets formula for the area of the triangle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.PerimeterFormula">
+            <summary>
+                Gets formula for the perimeter of the triangle as a string.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.SideA">
+            <summary>
+                Gets private field _SideA.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.SideB">
+            <summary>
+                Gets private field _SideB.
+            </summary>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.BaseC">
+            <summary>
+                Gets private field _BaseC.
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Triangle.CountPerimeter">
+            <summary>
+                Counts the Perimeter value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Triangle.CountArea">
+            <summary>
+                Counts the Area value.
+            </summary>
+            <returns>Value of shape's perimeter</returns>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.Perimeter">
+            <inheritdoc/>
+        </member>
+        <member name="P:Codecool.Geometry.Shapes.Triangle.Area">
+            <inheritdoc />
+        </member>
+        <member name="M:Codecool.Geometry.Shapes.Triangle.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Codecool.Geometry.Utils.ShapeEnum">
+            <summary>
+                Shape Enumerator class
+            </summary>
+        </member>
+        <member name="T:Codecool.Geometry.Utils.ShapeOperator">
+            <summary>
+                This is a subsidary class holding additional methods for the Program class
+            </summary>
+        </member>
+        <member name="M:Codecool.Geometry.Utils.ShapeOperator.ChoseShape">
+            <summary>
+                Choses an option from the shapes menu.
+            </summary>
+            <returns>Chosen option in a string format</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Utils.ShapeOperator.GenerateShape">
+            <summary>
+                Generates a new shape based on choice from the shape menu
+            </summary>
+            <returns>Generated shape</returns>
+        </member>
+        <member name="M:Codecool.Geometry.Utils.ShapeOperator.GenerateFormula">
+            <summary>
+                Generates formula for shape's area and perimeter based on choice from the shape menu
+            </summary>
+            <returns>Formula for shape's area and perimeter in a string format</returns>
+        </member>
+    </members>
+</doc>
